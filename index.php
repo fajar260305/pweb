@@ -28,21 +28,20 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link active" href="#">profil</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            absen
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Guru</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Siswa</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link active">kontak</a>
         </li>
       </ul>
     </div>
@@ -51,32 +50,38 @@
 <!-- end navbar -->
 
 
+
+<!-- start konten 1 -->
 <div class="container-fluid ">
   <div class="row align-items-start">
-    <div class="col text-center" style="margin-top: 80px;">
-      <p class="h1 m-5" style="font-size: 50px;">Selamat datang di website kami</p>
+    <div class="col text-center" style="margin-top: 100px;">
+      <p class="h1 m-2" style="font-size: 50px;">Selamat datang di website kami</p>
     </div>
   </div>
-  <div class="row align-center">
-    <div class="col">
-        <p class="col text-center">Smk Negeri 1 Cirebon trus melangkah maju untuk menjalin kerjasama dengan dunia industri, guna memberikan lulusan SMK yang kompeten dan bisa bekerj di perusahaan</p>
+  <div class="row justify-content-center">
+    <div class="col-4 text-center">
+    Smk Negeri 1 Cirebon trus melangkah maju untuk menjalin kerjasama dengan dunia industri, guna memberikan lulusan SMK yang kompeten dan bisa bekerj di perusahaan
     </div>
   </div>
 </div>
-</div>
+<!-- start konten 1 -->
 
 
-<div class="container-fluid">
+
+<!-- start konten 2 -->
+<div class="container-fluid mt-3">
   <div class="row align-items-start">
     <div class="col text-center mt-3 border">
         <span class="border border-primary mx-2"><span class="m-3">TGB</span></span>
-        <span class="border border-secondary mx-2"><span class="m-3">FGG</span></span>
-        <span class="border border-success mx-2"><span class="m-3">YTR</span></span>
+        <span class="border border-secondary mx-2"><span class="m-3">TKR</span></span>
+        <span class="border border-success mx-2"><span class="m-3">TOI</span></span>
         <span class="border border-danger mx-2"><span class="m-3">TPM</span></span>
         <span class="border border-warning mx-2"><span class="m-3">RPL</span></span>
+        <span class="border border-warning mx-2"><span class="m-3">TKJ</span></span>
     </div>
   </div>
 </div>
+<!-- end konter 2 -->
 
 
 <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" ></script>
