@@ -1,3 +1,26 @@
+<?php
+error_reporting(0);
+session_start();
+//$name = $_SESSION['name'];
+
+$link = mysqli_connect('localhost', 'root', '', 'pweb');
+
+if (isset($_POST['add'])) {
+  $name = $_POST['name'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  $sql = "INSERT INTO user(name, username, password)
+  VALUES('$name', '$username', '$password')";
+
+  mysqli_query($link, $sql);
+
+  header("location: login.php");
+}
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 
@@ -21,23 +44,23 @@
         <h1 class="card-title text-center">Create Account</h1>
       </div>
       <div class="card-text">
-        <form>
+        <form action="" method="post">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" aria-describedby="username">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="username" aria-describedby="username">
 
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Username</label>
+            <input type="password" name="username" class="form-control" id="exampleInputPassword1">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Konfirmasi Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
           </div>
 
           <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary">REGISTER</button>
+            <button type="submit" name="add" class="btn btn-primary">REGISTER</button>
           </div>
         </form>
       </div>
