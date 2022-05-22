@@ -37,7 +37,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Guru</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Siswa</a></li>
+            <li><a class="dropdown-item" href="absen.php">Siswa</a></li>
           </ul>
         </li>
         <li class="nav-item">
