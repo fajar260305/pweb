@@ -1,6 +1,6 @@
 <?php
 $link = mysqli_connect('localhost', 'root', '', 'pweb');
-//error_reporting(0);
+// error_reporting(0);
 session_start();
 
 if (isset($_SESSION['username'])) {
@@ -16,10 +16,10 @@ if (isset($_POST['masuk'])) {
     $data = mysqli_fetch_array($result);
 
     if (!password_verify($_POST['password'], $data['password'])) {
-        $alert = "username / password salah";
-    } else {
         $_SESSION['name'] = $data['name'];
         header("location: index.php");
+    } else {
+        $alert = "username / password salah";
     }
 }
 ?>
@@ -46,6 +46,7 @@ if (isset($_POST['masuk'])) {
             <div class="say">
                 <h1 class="card-title text-center">LOGIN</h1>
             </div>
+             <p class="login-box-msg"><?php echo $alert ?></p>
             <div class="card-text">
                 <form action="" method="post">
                     <div class="mb-3">
