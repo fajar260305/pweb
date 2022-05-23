@@ -1,3 +1,4 @@
+<!-- absen siswa -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
 
         .card {
             box-shadow: 0 -3px cornflowerblue;
+            background-color: #eaeaea;
         }
 
         .card-title {
@@ -33,6 +35,14 @@
 
         h3 {
             margin-bottom: 5vh;
+        }
+
+        .form-check {
+            color: #6495ed;
+        }
+
+        .form-select {
+            background-color: #6495ed;
         }
     </style>
     <script>
