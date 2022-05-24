@@ -1,18 +1,23 @@
 .container {
-    margin-top: 20vh;
+  margin-top: -20vh;
 }
 
 .card {
-    box-shadow: 0 -3px cornflowerblue;
+  box-shadow: 0 -3px cornflowerblue;
+  width: 390px;
+  height: 400px;
+  margin-top: -50px;
 }
 
 .card-title {
-    margin-bottom: 10vh;
 }
 
 .card-title {
-    font-family: verdana, sans-serif;
-    font-weight: 900;
-    padding-top: 20px;
-    color: cornflowerblue;
+  font-family: verdana, sans-serif;
+  font-weight: 900;
+  padding-top: 20px;
+  color: cornflowerblue;
+}
+
+.card-body {
 }

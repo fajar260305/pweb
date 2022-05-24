@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/absen.css">
+
     <title>Document</title>
     <style>
         .container {
@@ -13,16 +13,24 @@
         }
 
         .card {
-            box-shadow: 0 -3px cornflowerblue;
+            box-shadow: 0 -4px cornflowerblue;
+            width: 320px;
+            height: 400px;
+            margin-top: -50px;
+            border: 1px solid cornflowerblue;
         }
 
         .card-title {
             margin-bottom: 5vh;
+            font-family: verdana, sans-serif;
+            font-weight: 900;
+            padding-top: 20px;
+            color: cornflowerblue;
         }
 
         .card-body .jam {
             color: #1d59f2;
-            background-color: #2d2d2e;
+            font-family: 'verdana';
         }
 
         .card-title {
@@ -30,10 +38,13 @@
             font-weight: 900;
             padding-top: 20px;
             color: cornflowerblue;
+            margin-bottom: 80px;
         }
 
-        h3{
+        h5{
             margin-bottom: 5vh;
+            font-weight: 100px;
+            margin-bottom: 60px;
         }
     </style>
 
@@ -59,7 +70,7 @@
                     <form action="">
                         <h1 class="card-title text-center">Absen</h1>
                         <div class="jam">
-                        <h3 class="text-center" id="clock"></h3>
+                        <h5 class="text-center" id="clock"></h5>
                         </div>
                         <!-- absen -->
                         <div class="mt-3 d-flex justify-content-around">
